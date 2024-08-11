@@ -7,7 +7,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 
 let targetX = 0;
 let currentX = 0;
-let targetY = 0;
+let targetY = -1;
 let currentY = 0;
 let targetZ = 0;
 let currentZ = 0;
@@ -27,31 +27,27 @@ loader.load('building/scene.gltf',houseModel => {
   house = houseModel
   scene.add(houseModel.scene)
   camera.lookAt(houseModel.scene.position)
-  house.scene.rotation.set(0,-2,0)
+  house.scene.rotation.set(0,-2.0,0)
 })
 
 function addEventListeners(){
   document.getElementById("about-box")?.addEventListener("mouseover",() => {
-    // house?.scene.rotation.set(0,-1,0)
-    targetX = 0;
-    targetY = -0.5;
+    targetX = -0.4;
+    targetY = -1.1;
     targetZ = 0;
   })
   document.getElementById("showcase-box")?.addEventListener("mouseover",() => {
-    house?.scene.rotation.set(0,-1.5,0)
     targetX = 0;
-    targetY = -1.0;
+    targetY = -1.5;
     targetZ = 0;
   })
   document.getElementById("contact-box")?.addEventListener("mouseover",() => {
-    house?.scene.rotation.set(0,-2.0,0)
-    targetX = 0;
-    targetY = -2.0;
+    targetX = 0.4;
+    targetY = -1.9;
     targetZ = 0;
   })
 
   document.getElementById("scene")?.addEventListener("mouseover",() => {
-    house?.scene.rotation.set(0,-2.0,0)
     targetX = 0;
     targetY = -1.0;
     targetZ = 0.0;

@@ -28,7 +28,7 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   flex: 1;
   padding: 1em 1em 1em 1em;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   transition: linear 0.125s;
 }
