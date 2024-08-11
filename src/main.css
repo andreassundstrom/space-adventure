@@ -17,3 +17,28 @@ body {
   text-align: center;
   color: white;
 }
+
+.boxes {
+  display: flex;
+  gap: 1em;
+  padding: 0px 2em;
+}
+
+.box {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  padding: 1em 1em 1em 1em;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  transition: linear 0.125s;
+}
+
+.box:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  translate: 0 -0.5em;
+}
+
+
+.box h2 {
+  text-align: center;
+}
